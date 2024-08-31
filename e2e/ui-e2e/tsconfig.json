@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./pages/**/*.ts", "./tests/**/*.ts", "./utils/**/*.ts"],
+  "exclude": ["node_modules"]
+}
