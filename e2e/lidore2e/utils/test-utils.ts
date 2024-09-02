@@ -1,12 +1,11 @@
-import {test as base } from '@playwright/test';
-import { ApiClient } from '../helpers/ApiClient';
-
+import { test as base } from '@playwright/test';
+import { ApiManager } from '../helpers/api-manager'; // Adjust the path as needed
 
 export const test = base.extend<{
-    apiClient: ApiClient;
+    apiManager: ApiManager;
 }>({
-    apiClient: async ({ request }, use) => {
-        const apiClient = new ApiClient(request);
-        await use(apiClient);
+    apiManager: async ({ request }, use) => {
+        const apiManager = new ApiManager(request);
+        await use(apiManager);
     },
 });
