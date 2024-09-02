@@ -1,7 +1,5 @@
 import { expect } from '@playwright/test';
-import { test } from '../utils/test-utils'; // Assuming this file sets up the unified fixture
-import { ApiManager } from '../helpers/api-manager'; // Import the unified API client
-
+import { test } from '../utils/test-utils';
 test.describe('Posts API Tests', () => {
     test.beforeAll(async ({ request }) => {
         console.log('Initialized API clients');
