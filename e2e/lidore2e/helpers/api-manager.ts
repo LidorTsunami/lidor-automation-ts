@@ -1,6 +1,6 @@
 import { APIRequestContext } from '@playwright/test';
-import { PostsApiClient } from './posts-api-client'; // Adjust the path as needed
-import { BaseApiClient } from './base-api-client'; // Adjust the path as needed
+import { PostsApiClient } from './posts-api-client';
+import { BaseApiClient } from './base-api-client';
 
 export class ApiManager {
     public readonly postsApiClient: PostsApiClient;

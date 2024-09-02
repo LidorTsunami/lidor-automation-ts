@@ -1,5 +1,5 @@
 import { test as base } from '@playwright/test';
-import { ApiManager } from '../helpers/api-manager'; // Adjust the path as needed
+import { ApiManager } from '../helpers/api-manager';
 
 export const test = base.extend<{
     apiManager: ApiManager;
