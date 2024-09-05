@@ -1,5 +1,5 @@
 import { test } from '../fixtures/test-fixtures';
-import {expect} from "playwright/test";// Adjust the import path as needed
+import {expect} from "playwright/test";
 
 test.describe('Login Page Tests', () => {
     test('should login successfully', async ({ loginPage }) => {
